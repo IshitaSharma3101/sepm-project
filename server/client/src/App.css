@@ -8,12 +8,12 @@
 }
 
 .input-field input[type=text]:focus {
-  border-bottom: 1px solid rgb(8, 93, 252) !important;
-  box-shadow: 0 1px 0 0 rgb(8, 93, 252)  !important;
+  border-bottom: 1px solid #26a69a !important;
+  box-shadow: 0 1px 0 0 #26a69a  !important;
 }
 .input-field input[type=password]:focus {
-  border-bottom: 1px solid rgb(8, 93, 252) !important;
-  box-shadow: 0 1px 0 0 rgb(8, 93, 252)  !important;
+  border-bottom: 1px solid #26a69a !important;
+  box-shadow: 0 1px 0 0 #26a69a  !important;
 }
 
 .gallery{
@@ -55,11 +55,11 @@
 
 
 /*----------------------------
-            SLIDER
+            SLIDER(sign up)
 ----------------------------*/
 
 
-slider{
+slider2{
   display: block;
   width: 100%;
   height: 100%;
@@ -68,7 +68,7 @@ slider{
   position: fixed;
 }
 
-slider > *{
+slider2 > *{
   position: absolute;
   display: block;
   width: 100%;
@@ -78,7 +78,7 @@ slider > *{
   overflow: hidden;
 }
 
-slide:nth-child(1){
+slide2:nth-child(1){
   left: 0%;
   animation-delay: 9s;
   background-image: url(images/img1.jpg);
@@ -87,7 +87,7 @@ slide:nth-child(1){
   
 }
 
-slide:nth-child(2) {
+slide2:nth-child(2) {
   animation-delay: 6s;
   background-image: url(images/img2.jpg);
   background-size: cover;
@@ -95,7 +95,7 @@ slide:nth-child(2) {
   
 }
 
-slide:nth-child(3) {
+slide2:nth-child(3) {
   animation-delay: 3s;
   background-image: url(images/img3.jpg);
   background-size: cover;
@@ -103,7 +103,7 @@ slide:nth-child(3) {
   
 }
 
-slide:nth-child(4) {
+slide2:nth-child(4) {
   left: 0%;
   animation-delay: 0s;
   background-image: url(images/img4.jpg);
@@ -112,7 +112,7 @@ slide:nth-child(4) {
   
 }
 
-@keyframes slide{
+@keyframes slide2{
   0%{left:100%; width:100%;}
   5%{left:0%;}
   25%{left: 0%;}
@@ -121,10 +121,105 @@ slide:nth-child(4) {
   100%{left:100%; width:0%;}
 }
 
-slide h1{
+slide2 h1{
   color: #fff;
   text-align: center;
 }
+
+
+/*----------------------------
+            SLIDER(sign in)
+----------------------------*/
+
+
+slider {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(77, 76, 76);
+  overflow: hidden;
+  position: fixed;
+}
+
+slider>* {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(77, 76, 76);
+  animation: slide 12s infinite;
+  overflow: hidden;
+}
+
+slide:nth-child(1) {
+  left: 0%;
+  animation-delay: 9s;
+  background-image: url(images/img5.jpg);
+  background-size: cover;
+  background-position: center;
+
+}
+
+slide:nth-child(2) {
+  animation-delay: 6s;
+  background-image: url(images/img6.jpg);
+  background-size: cover;
+  background-position: center;
+
+}
+
+slide:nth-child(3) {
+  animation-delay: 3s;
+  background-image: url(images/img7.jpg);
+  background-size: cover;
+  background-position: center;
+
+}
+
+slide:nth-child(4) {
+  left: 0%;
+  animation-delay: 0s;
+  background-image: url(images/img8.jpg);
+  background-size: cover;
+  background-position: center;
+
+}
+
+@keyframes slide {
+  0% {
+    left: 100%;
+    width: 100%;
+  }
+
+  5% {
+    left: 0%;
+  }
+
+  25% {
+    left: 0%;
+  }
+
+  30% {
+    left: -100%;
+    width: 100%;
+  }
+
+  30.0001% {
+    left: -100%;
+    width: 0%;
+  }
+
+  100% {
+    left: 100%;
+    width: 0%;
+  }
+}
+
+slide h1 {
+  color: #fff;
+  text-align: center;
+}
+
 
 
 /*----------------------------
@@ -232,12 +327,63 @@ textarea.materialize-textarea {
   margin-top: 25px
 }
 
-.auth-card h3{
+.auth-card h3,
+.auth-card2 h3
+{
   color: #fff;
   font-family: 'Kiwi Maru',
   serif;
 }
 
+
+
 ::placeholder{
   color: white
+}
+
+
+
+.auth-card2 {
+  padding: 10px;
+  text-align: center;
+  max-width: 400px;
+  margin: 3px auto;
+  /* top: 50%; */
+  /* transform: translate(0%, 40%); */
+  background-color: rgba(0, 0, 0, 0.233);
+  border-radius: 1rem;
+  height: 400px;
+    /* opacity: 0.5; */
+  top: 50px
+}
+
+input[type=text],
+[type=password]
+{
+  /* background-color: #3CBC8D; */
+  color: white;
+}
+
+
+/*************** scroll bar ***************/
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
