@@ -263,6 +263,16 @@ ul {
   padding-inline-start: 0px;
 }
 
+nav i,
+nav [class^="mdi-"], nav [class*="mdi-"],
+nav i.material-icons {
+  display: block;
+  font-size: 44px;
+  height: 56px;
+  line-height: 56px;
+  position:relative;
+  top: 13px;
+}
 
 /*----------------------------
             LOGIN
@@ -361,7 +371,7 @@ input[type=text],
 [type=password]
 {
   /* background-color: #3CBC8D; */
-  color: white;
+  color: black;
 }
 
 
@@ -387,3 +397,4 @@ input[type=text],
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
+
